@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8" content="IE=Edge" http-equiv="X-UA-Compatible">
+        <title>(伪)哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
+        <link rel="stylesheet" href="bilibili.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="t-nav">
+                <div class="t-nav-header">
+                    <div class="t-nav-l">
+                        <ul>
+                            <li class="home">
+                                <a class="i-link" href=""><span>主站</span></a>
+                            </li>
+                            <li class="hbili">
+                                <a class="i-link" href="">画友</a>
+                            </li>
+                            <li class="gc">
+                                <a class="i-link" href="">游戏中心</a>
+                            </li>
+                            <li class="live">
+                                <a class="i-link" href="">直播</a>
+                            </li>
+                            <li class="zb">
+                                <a class="i-link" href="">周边</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="uns-box">
+                        <ul class="menu">
+                            <li class="u-i">
+                                <a id="login" class="i-link" href=""><span>登录</span></a>
+                                <i class="s-line"></i>
+                                <a id="register" class="i-link" href=""><span>注册</span></a>
+                            </li>
+                            <li class="u-i b-post">
+                                <a class="i-link" href="">投 稿</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <form action="" id="search-form" target="_blank">
+                            <input type="text" name="keyword" id="search-keyword" placeholder="搜索">
+                            <button type="submit" class="search-submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bg">
+            <div class="bg"></div>
+        </div>
+        <div class="login-page">
+            <div class="login-head">
+                <div class="lin">
+                    <div class="tit">
+                        <img src="https://static-s.bilibili.com/passport/img/t2.png" alt="登录">
+                    </div>
+                </div>
+            </div>
+            <div class="login-input">
+                <form action="" method="post" onsubmit="">
+                    <div class="box">
+                        <input type="text" name="username" placeholder="你的手机号/邮箱" autocomplet= "off">
+                    </div>
+                    <div class="box">
+                        <input type="password" name="password" placeholder="密码" autocomplet= "off">
+                    </div>
+                    <div class="box">
+                        <input type="text" id="input" placeholder="验证码" style="width:172px" autocomplet= "off" onclick="xsyzm()">
+                        <input type="button" id="code" onclick="createcode()">
+                    </div>
+                    <div class="box">
+                        <input type="submit" class="login" name="login" onclick="yanzheng()" value="登录">
+                        <a class="register" href="">注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="bilibili.js"></script>
+    </body>
+</html>
