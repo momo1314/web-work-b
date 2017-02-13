@@ -1,0 +1,454 @@
+html body{
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-size: 12px;
+}
+body,a,ul,li,div,span{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+div{
+	display: block;
+}
+span{
+	display: block;
+}
+ul,li{
+	list-style-type: none;
+}
+li{
+	display: list-item;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0;
+	display: block;
+	color: #222;
+}
+input[type=text] {
+    color: #222;
+    border: 1px solid #ccd0d7;
+}
+input, textarea {
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+input, button, select, textarea {
+    outline: 0;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+
+
+//顶部导航
+.top-dh{
+	color: #222;
+    position: relative;
+    z-index: 10000;
+}
+.top-blur{
+	height: 42px;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.1) 0 1px 2px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serifsans-serif;
+    color: #222;
+    background-color: transparent;
+}
+.top-mask{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.top-mask-bg{
+	position: absolute;
+    height: 62px;
+    padding: 0 20px;
+    top: -10px;
+    left: -20px;
+    width: 100%;
+    -webkit-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5,MakeShadow=false);
+    z-index: 50;
+    background-position: center 0!important;
+    background-repeat: no-repeat;
+}
+.top-mask-white{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    filter: alpha(opacity=40) \9;
+    background-color: rgba(255,255,255,0.4);
+    z-index: 100;
+}
+.top-header{
+	display: block;
+    margin: 0 auto;
+    position: relative;
+    text-align: left;
+    z-index: 10000;
+    width: 980px;
+    zoom: 1;
+    width: 1160px;
+    height: 42px; 
+}
+.top-nav{
+	float: left;
+    height: 42px;
+    font-size: 12px;
+}
+.top-header .i-link{
+	transition: .15s background-color;
+    font-size: 13px;
+    padding: 0 14px;
+}
+.top-nav ul li{
+	float: left;
+    text-align: center;
+    line-height: 42px;
+    position: relative;
+}
+.top-nav ul li a.i-link{
+	height: 100%;
+
+}
+.top-nav ul li.home{
+	margin-left: -10px;
+    background-image: url('http://static.hdslb.com/images/base/icons.png');
+    background-repeat: no-repeat;
+    background-position: -910px -74px;
+}
+.top-nav ul li.home .i-link{
+	width: 50px;
+	height: 42px;
+	padding: 0 0 0 20px;
+}
+.top-nav ul li.hbili{
+	position: relative;
+}
+a.i-link:hover{
+	background-color: rgba(255,255,255,0.3);
+}
+.unsbox{
+	float: right;
+	font-size: 12px;
+}
+.unsbox ul.menu{
+	float: left;
+	position: relative;
+}
+.unsbox ul.menu li.login-reg{
+	padding: 0 10px;
+	float: left;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+}
+.unsbox ul.menu li a.i-link{
+	float: left;
+	display: inline-block;
+	padding: 0 10px;
+}
+.unsbox li.login-reg .s-line{
+	float: left;
+	display: inline-block;
+    border-left: 1px solid #222;
+    height: 12px;
+    margin-top: 16px;
+    vertical-align: top;
+}
+.unsbox li.b-post{
+	float: left;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+    margin-right: 0;
+}
+.unsbox ul.menu li.b-post a.i-link{
+	margin: 0;
+    padding: 0;
+    width: 58px;
+    position: relative;
+    z-index: 10;
+    background: url('http://static.hdslb.com/images/base/b-post.png') center center no-repeat;
+    height: 48px;
+    border-radius: 0 0 5px 5px;
+    color: #fff!important;
+    font-size: 14px;
+}
+
+
+//分类区
+.header{
+	background: transparent no-repeat center -10px;
+    position: relative;
+    margin: -42px auto 0;
+    height: 232px;
+}
+.header .header-layer,.header-link{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    z-index: 10;
+}
+.header .h-center{
+	width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    height: 170px;
+    transition: .2s height;
+}
+.header .logo{
+	position: absolute;
+    width: 220px;
+    height: 105px;
+    left: 24px;
+    top: 55px;
+    background: transparent no-repeat left center;
+    z-index: 100;
+}
+.header .h-center .b-title{
+	position: absolute;
+    top: 114px;
+    left: 255px;
+    line-height: 20px;
+    padding: 6px 10px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.68);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    max-width: 350px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    font-size: 12px
+}
+.header .h-center .b-titlein{
+	position: absolute;
+    top: 114px;
+    left: 255px;
+    line-height: 20px;
+    padding: 6px 10px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.68);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    max-width: 350px;
+    visibility: visible;
+    opacity: 1;
+    transition: .2s;
+    font-size: 12px
+}
+.header .num{
+	width: 100%;
+	background: #fff;
+	height: 62px;
+}
+.header .num .menu-wrapper{
+	width: 1160px;
+	position: relative;
+    margin: 0 auto;
+    padding: 6px 0;
+    z-index: 100;
+    height: 62px;
+}
+.header .num ul.nav-menu{
+	zoom: 1;
+    display: inline-block;
+    vertical-align: top;
+    height: 50px
+}
+.header .num li.m-i{
+	float: left;
+    position: relative;
+    font-size: 14px;
+    display: block;
+    height: 50px;
+}
+.header .num li.m-i.home{
+	padding: 0 20px 0 0;
+	width: auto;
+	margin: 0;
+}
+.header .num li.m-i a.link{
+	position: relative;
+    z-index: 10;
+    font-size: 14px;
+}
+.header .num li.m-i.home a.i-link{
+	padding: 0;
+	background: url('http://static.hdslb.com/images/base/icons.png') -658px -1170px no-repeat;
+}
+.header .num li.m-i.home a.i-link em{
+	padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+}
+.header .num li.m-i a.i-link em{
+	margin: 0 17px;
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 42px;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+}
+.header .num li.m-i .v-num{
+	position: absolute;
+    top: 8px;
+    left: 0;
+    height: 14px;
+    width: 100%;
+    text-align: center;
+}
+.header .num li.m-i span{
+	position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -12px;
+    color: #fff;
+    border-radius: 4px;
+    height: 12px;
+    line-height: 10px;
+    text-align: center;
+    font-family: Calibri,Arial,Helvetica,sans-serifsans-serif;
+    background-color: #ffafc9;
+    font-size: 11px;
+    min-width: 18px;
+    padding: 1px 3px;
+}
+.header .num li.m-i .v-num span{
+	position: static;
+    display: inline-block;
+    vertical-align: top;
+    top: auto;
+    left: auto;
+    margin-left: 0;
+    background-color: #ffafc9;
+    line-height: 12px;
+
+}
+.header .num li.m-i.m-i-square{
+	margin: 0 20px;
+}
+.header .num li.m-i.m-i-square a.i-link em{
+	padding-left: 22px;
+    padding-right: 0;
+    padding-top: 0;
+    height: 50px;
+    margin: 0!important;
+    font-size: 16px;
+    background: url('http://static.hdslb.com/images/base/icons.png') -664px -904px no-repeat;
+}
+.header .num li.m-i.m-i-live {
+    margin-left: 20px;
+}
+.header .num li.m-i.m-i-live a.i-link em {
+    padding-left: 22px;
+    padding-right: 0;
+    padding-top: 0;
+    height: 50px;
+    margin: 0!important;
+    background: url('http://static.hdslb.com/images/base/icons.png') -664px -518px no-repeat;
+    font-size: 16px;
+}
+.header .num li.m-i:hover em{
+	color: #00a1d6;
+}
+.header .num .search {
+    position: absolute;
+    top: -56px;
+    right: 0;
+    width: 268px;
+    height: 32px;
+    padding: 2px 2px 2px 72px;
+    background-color: #e5e9ef;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+.header .num .search #searchform {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.88);
+    display: block;
+    height: 32px;
+    border-radius: 4px;
+    transition: .2s background-color;
+}
+.header .num .search input.search-keyword{
+    float: left;
+    width: 200px;
+    color: #222;
+    font-size: 12px;
+    overflow: hidden;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 12px;
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+.header .num .search button.search-submit {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 48px;
+    min-width: 0;
+    cursor: pointer;
+    height: 32px;
+    background: url('http://static.hdslb.com/images/base/icons.png') -653px -720px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.header .num .search .link-ranking {
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.88);
+    border-radius: 4px;
+    width: 68px;
+    transition: .2s background-color;
+}
+.header .num .search .link-ranking span {
+    padding-left: 26px;
+    color: #f25d8e;
+    display: inline-block;
+    background: url('http://static.hdslb.com/images/base/icons.png') -659px -655px no-repeat;
+}
+.header .num .search a.link-ranking:hover {
+	background-color: #fff;
+}
