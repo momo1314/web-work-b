@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" content="IE=Edge" http-equiv="X-UA-Compatible">
         <title>(伪)哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
-        <link rel="stylesheet" href="bilibili.css">
+        <link rel="stylesheet" href="../css/login-reg.css">
     </head>
     <body>
         <div class="header">
@@ -31,9 +31,9 @@
                     <div class="uns-box">
                         <ul class="menu">
                             <li class="u-i">
-                                <a id="login" class="i-link" href="./login.html"><span>登录</span></a>
+                                <a id="login" class="i-link" href=""><span>登录</span></a>
                                 <i class="s-line"></i>
-                                <a id="register" class="i-link" href=""><span>注册</span></a>
+                                <a id="register" class="i-link" href="./reg.html"><span>注册</span></a>
                             </li>
                             <li class="u-i b-post">
                                 <a class="i-link" href="">投 稿</a>
@@ -56,23 +56,29 @@
             <div class="login-head">
                 <div class="lin">
                     <div class="tit">
-                        <img src="https://static-s.bilibili.com/passport/img/t1.png" alt="登录">
+                        <img src="https://static-s.bilibili.com/passport/img/t2.png" alt="登录">
                     </div>
                 </div>
             </div>
-            <div class="login-input" style="margin-top: 60px">
-                <form action="" method="post" onsubmit="">
+            <div class="login-input">
+                <form action="../php/login.php" method="post" onsubmit="">
                     <div class="box">
-                        <input type="text" name="username" placeholder="你的手机号/邮箱">
+                        <input type="text" name="username" placeholder="你的手机号/邮箱" autocomplet= "off">
                     </div>
                     <div class="box">
-                        <input type="password" name="password" placeholder="密码">
+                        <input type="password" name="password" placeholder="密码" autocomplet= "off">
                     </div>
                     <div class="box">
-                        <input type="submit" class="r-register" value="注册" >
+                        <input type="text" id="input" placeholder="验证码" name="v-code" style="width:172px" autocomplet= "off" onclick="xsyzm()">
+                       <img id="yzm" title="点击刷新" src="../v-code/captcha.php" align="absbottom" onclick="this.src='../v-code/captcha.php?'+Math.random();"></img>
+                    </div>
+                    <div class="box">
+                        <input type="submit" class="login" name="login" value="登录">
+                        <a class="register" href="reg.html">注册</a>
                     </div>
                 </form>
             </div>
         </div>
+        <script src="../js/login-reg.js"></script>
     </body>
 </html>
