@@ -161,6 +161,14 @@ a.i-link:hover{
     float: left;
     position: relative;
 }
+.unsbox ul.menu .u-i{
+    float: left;
+    text-align: center;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+    display: list-item;
+}
 .unsbox ul.menu li.login-reg{
     padding: 0 10px;
     float: left;
@@ -168,6 +176,7 @@ a.i-link:hover{
     height: 42px;
     line-height: 42px;
     position: relative;
+    display: none;
 }
 .unsbox ul.menu li a.i-link{
     float: left;
