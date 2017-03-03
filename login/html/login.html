@@ -61,22 +61,24 @@
                 </div>
             </div>
             <div class="login-input">
-                <form action="../php/login.php" method="post" onsubmit="">
-                    <div class="box">
-                        <input type="text" name="username" placeholder="你的手机号/邮箱" autocomplet= "off">
+                <form action="../php/login.php" method="post" target="text" onsubmit="return checkstr(username.value)">
+                    <div class="box" id="loginquare">
+                        <input type="text" id="zh" name="username" placeholder="你的账号" autocomplet= "off">
                     </div>
+                    <p id="checkfh" style="display: none; position: absolute; top: 245px">不能包含 \ ' " 以及空格符号</p>
                     <div class="box">
-                        <input type="password" name="password" placeholder="密码" autocomplet= "off">
+                        <input type="password" id="mm" name="password" placeholder="密码" autocomplet= "off" onchange="">
                     </div>
                     <div class="box">
                         <input type="text" id="input" placeholder="验证码" name="v-code" style="width:172px" autocomplet= "off" onclick="xsyzm()">
                        <img id="yzm" title="点击刷新" src="../v-code/captcha.php" align="absbottom" onclick="this.src='../v-code/captcha.php?'+Math.random();"></img>
                     </div>
                     <div class="box">
-                        <input type="submit" class="login" name="login" value="登录">
+                        <input type="submit" class="login" id="denglu" name="login" value="登录">
                         <a class="register" href="reg.html">注册</a>
                     </div>
                 </form>
+
             </div>
         </div>
         <script src="../js/login-reg.js"></script>

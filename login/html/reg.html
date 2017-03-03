@@ -63,14 +63,14 @@
             <div class="login-input" style="margin-top: 60px">
                 <form action="../php/reg.php" method="post" onsubmit="">
                     <div class="box">
-                        <input type="text" name="username" placeholder="你的手机号/邮箱">
+                        <input type="text" name="username" placeholder="你的账号">
                     </div>
                     <div class="box">
                         <input type="password" name="password" placeholder="密码">
                     </div>
                     <div class="box">
                         <input type="text" id="input" placeholder="验证码" name="v-code" style="width:172px" autocomplet= "off" onclick="xsyzm()">
-                       <img id="yzm" title="点击刷新" src="../v-code/captcha.php" align="absbottom" onclick="this.src='../v-code/captcha.php?'+Math.random();"></img>
+                        <img id="yzm" title="点击刷新" src="../v-code/captcha.php" align="absbottom" onclick="this.src='../v-code/captcha.php?'+Math.random();"></img>
                     </div>
                     <div class="box">
                         <input type="submit" class="r-register" value="注册" >

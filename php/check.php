@@ -1,24 +1,28 @@
-<?
+<?php
 session_start();
-if($_SESSION['login'])
+$return = array();
+if(!empty($_SESSION['uid']))
 {
-    $uid = $_SESSION['login']
+    $uid = $_SESSION['uid'];
     try 
             {
                 $config = require_once './config.php';
                 $pdo = new PDO($config['dsn'], $config['user'], $config['password']);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $res = $pdo->query("select * from user where uid='{$uid}'");
-                $data = $res->fetch(PDO::FETCH_ASSOC);
-                return $data
-            } 
-    catch (PDOException $e) 
+                $res = $pdo->query("select uid,username,time,img from user");
+                while($row=$data = $res->fetch(PDO::FETCH_ASSOC)){
+                     echo json_encode($row).',';
+                 }
+            }
+    catch (PDOException $exception) 
     {
-        echo "数据库连接失败";
+        $return['status'] = 'flase'; 
+        echo json_encode($return);
     }
 }
 else
 {
-    return 0;
+    $return['status'] = 'flase'; 
+    echo json_encode($return);
 }
 ?>

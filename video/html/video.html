@@ -1,21 +1,15 @@
-<?php
-session_start();
-print_r($_SESSION);
-?>
 <!DOCTYPE html>
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" content="IE=Edge" http-equiv="X-UA-Compatible">
         <title>(伪)哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</title>
-        <link rel="stylesheet" href="../css/index.css">
-        <link rel="stylesheet" type="text/css" href="../css/img.css">
-        <script type="text/javascript" src="../js/ajax.js"></script>
+        <link rel="stylesheet" href="../css/video.css">
     </head>
     <body>
         <div class="top-dh">
             <div class="top-blur">
                 <div class="top-mask">
-                    <div class="top-mask-bg" style="background-image: url('../img/top.jpg')"></div>
+                    <div class="top-mask-bg" style="background-image: url('../../img/top.jpg')"></div>
                     <div class="top-mask-white"></div>
                 </div>
                 <div class="top-header">
@@ -75,11 +69,11 @@ print_r($_SESSION);
                 </div>
             </div>
         </div>
-        <div class="header" style="background-image:url('../img/top.jpg');">
+        <div class="header" style="background-image:url('../../img/top.jpg');">
             <div class="header-layer"></div>
             <a href="" class="header-link" onmouseover="mouseover()" onmouseout="mouseout()"></a>
             <div class="h-center">
-                <div class="b-title" id="btitle">bilibili - ( ゜- ゜)つロ 乾杯~</div>                
+                <div class="b-title" id="btitle">bilibili - ( ゜- ゜)つロ 乾杯~</div>
                 <a href="" class="logo" style="background-image: url('http://i0.hdslb.com/bfs/archive/51b931c6f1908d36a6094078118403544ae8e8c2.png')"></a>
             </div>
             <div class="num">
@@ -221,39 +215,38 @@ print_r($_SESSION);
                 </div>
             </div>
         </div>
-        <div>
-            <div class="b-page">
-                <!-- 顶部 -->
-                <div class="b-page-top">
-                    <script type="text/javascript" src="../js/bilibili.js"></script>
-                    <div id="con" class="con">
-                        <div id="img"  style="left:-440px;">
-                            <img src="../img/2233_10.jpg"/>
-                            <img src="../img/2233_7.jpg"/>
-                            <img src="../img/2233_2.jpg"/>
-                            <img src="../img/2233_3.jpg"/>
-                            <img src="../img/2233_5.jpg"/>
-                            <img src="../img/2233_10.jpg"/>
-                            <img src="../img/2233_7.jpg"/>
-                        </div>
-                        <div id="bottom" class="bottom">
-                            <span class = "span_1">
-                                <div class="div_1">
-                                <a class = "a_1"></a>
-                                </div>
-                            </span>
-                            <ul class="button" id="button">
-                                <li class="on" index="1"></li>
-                                <li class="" index="2"></li>
-                                <li class="" index="3"></li>
-                                <li class="" index="4"></li>
-                                <li class="" index="5"></li><!-- 第一张图 -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="v-head">
+        	<div class="v-title">
+        		<h1>Frist Video 哔哩哔哩 干杯！~</h1>
+        		<div class="v-upid">
+        			<div>头像</div>
+        			<div>信息</div>
+        		</div>
+        	</div>
         </div>
-        <script src="../js/index.js"></script>
+        <div class="v-body">
+        	<div id="tm"></div>
+        	<video src="" controls preload="auto" poster="" id="myVideo"></video>
+        	<form method="post" class="dm" target="test">
+        		<div style="float:right">
+        			<input type="text" class="danmu" id="dmnr" placeholder="请文明发送弹幕!~" >
+        			<input type="submit" id="senddm" class="senddm" autocomplete="on" value="发射弹幕" >
+        		</div>
+        	</form>
+        </div>
+        <form method="post" target="test">
+        	<div class="all">
+        		<div class="pinglun">
+        			<div class="user-face">头像</div>
+        			<div class="textarea-container">
+        				<textarea cols="80" name="msg" rows="5" placeholder="请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。" class="ipt-txt" id="sendtext"></textarea>
+        				<button onclick="creatediv('cm-list')" type="submit" class="comment-submit" id="sendpl">发表评论</button>
+        			</div>
+        			<div class="comment-list" id="cm-list"></div>
+        		</div>
+        	</div>
+        </form>
+        <iframe name="test"></iframe>
+        <script src="../js/video.js"></script>
     </body>
 </html>

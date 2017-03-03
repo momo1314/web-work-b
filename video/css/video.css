@@ -1,30 +1,34 @@
 html body{
-    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
-    font-size: 12px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-size: 12px;
 }
 body,a,ul,li,div,span{
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
 }
 div,span,a{
-    display: block;
+	display: block;
 }
 ul,li{
-    list-style-type: none;
+	list-style-type: none;
 }
 li{
-    display: list-item;
+	display: list-item;
 }
 a{
-    text-decoration: none;
-    cursor: pointer;
-    outline: 0;
-    color: #222;
+	text-decoration: none;
+	cursor: pointer;
+	outline: 0;
+	color: #222;
 }
 input[type=text] {
     color: #222;
     border: 1px solid #ccd0d7;
+}
+input[type=submit]{
+    border: none;
+    cursor: pointer;
 }
 input, textarea {
     font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
@@ -48,12 +52,12 @@ input, textarea, keygen, select, button {
 
 
 .top-dh{
-    color: #222;
+	color: #222;
     position: relative;
     z-index: 10000;
 }
 .top-blur{
-    height: 42px;
+	height: 42px;
     background: #fff;
     box-shadow: rgba(0,0,0,0.1) 0 1px 2px;
     top: 0;
@@ -66,7 +70,7 @@ input, textarea, keygen, select, button {
     background-color: transparent;
 }
 .top-mask{
-    position: absolute;
+	position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -75,7 +79,7 @@ input, textarea, keygen, select, button {
     background-color: #fff;
 }
 .top-mask-bg{
-    position: absolute;
+	position: absolute;
     height: 62px;
     padding: 0 20px;
     top: -10px;
@@ -90,7 +94,7 @@ input, textarea, keygen, select, button {
     background-repeat: no-repeat;
 }
 .top-mask-white{
-    position: absolute;
+	position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -101,7 +105,7 @@ input, textarea, keygen, select, button {
     z-index: 100;
 }
 .top-header{
-    display: block;
+	display: block;
     margin: 0 auto;
     position: relative;
     text-align: left;
@@ -111,49 +115,49 @@ input, textarea, keygen, select, button {
     height: 42px; 
 }
 .top-nav{
-    float: left;
+	float: left;
     height: 42px;
     font-size: 12px;
 }
 .top-header .i-link{
-    transition: .15s background-color;
+	transition: .15s background-color;
     font-size: 13px;
     padding: 0 14px;
 }
 .top-nav ul li{
-    float: left;
+	float: left;
     text-align: center;
     line-height: 42px;
     position: relative;
 }
 .top-nav ul li a.i-link{
-    height: 100%;
+	height: 100%;
 
 }
 .top-nav ul li.home{
-    margin-left: -10px;
+	margin-left: -10px;
     background-image: url('http://static.hdslb.com/images/base/icons.png');
     background-repeat: no-repeat;
     background-position: -910px -74px;
 }
 .top-nav ul li.home .i-link{
-    width: 50px;
-    height: 42px;
-    padding: 0 0 0 20px;
+	width: 50px;
+	height: 42px;
+	padding: 0 0 0 20px;
 }
 .top-nav ul li.hbili{
-    position: relative;
+	position: relative;
 }
 a.i-link:hover{
-    background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.3);
 }
 .unsbox{
-    float: right;
-    font-size: 12px;
+	float: right;
+	font-size: 12px;
 }
 .unsbox ul.menu{
-    float: left;
-    position: relative;
+	float: left;
+	position: relative;
 }
 .unsbox ul.menu .u-i{
     float: left;
@@ -164,8 +168,8 @@ a.i-link:hover{
     display: list-item;
 }
 .unsbox ul.menu li.login-reg{
-    padding: 0 10px;
-    float: left;
+	padding: 0 10px;
+	float: left;
     text-align: center;
     height: 42px;
     line-height: 42px;
@@ -173,20 +177,20 @@ a.i-link:hover{
     display: none;
 }
 .unsbox ul.menu li a.i-link{
-    float: left;
-    display: inline-block;
-    padding: 0 10px;
+	float: left;
+	display: inline-block;
+	padding: 0 10px;
 }
 .unsbox li.login-reg .s-line{
-    float: left;
-    display: inline-block;
+	float: left;
+	display: inline-block;
     border-left: 1px solid #222;
     height: 12px;
     margin-top: 16px;
     vertical-align: top;
 }
 .unsbox li.b-post{
-    float: left;
+	float: left;
     text-align: center;
     height: 42px;
     line-height: 42px;
@@ -194,7 +198,7 @@ a.i-link:hover{
     margin-right: 0;
 }
 .unsbox ul.menu li.b-post a.i-link{
-    margin: 0;
+	margin: 0;
     padding: 0;
     width: 58px;
     position: relative;
@@ -209,13 +213,13 @@ a.i-link:hover{
 
 
 .header {
-    background: transparent no-repeat center -10px;
+	background: transparent no-repeat center -10px;
     position: relative;
     margin: -42px auto 0;
     height: 232px;
 }
 .header .header-layer,.header-link{
-    position: absolute;
+	position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -223,14 +227,14 @@ a.i-link:hover{
     z-index: 10;
 }
 .header .h-center{
-    width: 980px;
+	width: 980px;
     margin: 0 auto;
     position: relative;
     height: 170px;
     transition: .2s height;
 }
 .header .logo{
-    position: absolute;
+	position: absolute;
     width: 220px;
     height: 105px;
     left: 24px;
@@ -239,7 +243,7 @@ a.i-link:hover{
     z-index: 100;
 }
 .header .h-center .b-title{
-    position: absolute;
+	position: absolute;
     top: 114px;
     left: 255px;
     line-height: 20px;
@@ -256,7 +260,7 @@ a.i-link:hover{
     font-size: 12px
 }
 .header .h-center .b-titlein{
-    position: absolute;
+	position: absolute;
     top: 114px;
     left: 255px;
     line-height: 20px;
@@ -273,52 +277,52 @@ a.i-link:hover{
     font-size: 12px
 }
 .header .num{
-    width: 100%;
-    background: #fff;
-    height: 62px;
+	width: 100%;
+	background: #fff;
+	height: 62px;
 }
 .header .num .menu-wrapper{
-    width: 980px;
-    position: relative;
+	width: 980px;
+	position: relative;
     margin: 0 auto;
     padding: 6px 0;
     z-index: 100;
     height: 62px;
 }
 .header .num ul.nav-menu{
-    zoom: 1;
+	zoom: 1;
     display: inline-block;
     vertical-align: top;
     height: 50px
 }
 .header .num li.m-i{
-    float: left;
+	float: left;
     position: relative;
     font-size: 14px;
     display: block;
     height: 50px;
 }
 .header .num li.m-i.home{
-    padding: 0 20px 0 0;
-    width: auto;
-    margin: 0;
+	padding: 0 20px 0 0;
+	width: auto;
+	margin: 0;
 }
 .header .num li.m-i a.link{
-    position: relative;
+	position: relative;
     z-index: 10;
     font-size: 14px;
 }
 .header .num li.m-i.home a.i-link{
-    padding: 0;
-    background: url('http://static.hdslb.com/images/base/icons.png') -658px -1170px no-repeat;
+	padding: 0;
+	background: url('http://static.hdslb.com/images/base/icons.png') -658px -1170px no-repeat;
 }
 .header .num li.m-i.home a.i-link em{
-    padding-right: 0;
+	padding-right: 0;
     padding-left: 0;
     margin: 0;
 }
 .header .num li.m-i a.i-link em{
-    margin: 0 17px;
+	margin: 0 17px;
     line-height: 50px;
     display: inline-block;
     vertical-align: middle;
@@ -328,7 +332,7 @@ a.i-link:hover{
     font-weight: normal;
 }
 .header .num li.m-i .v-num{
-    position: absolute;
+	position: absolute;
     top: 8px;
     left: 0;
     height: 14px;
@@ -336,7 +340,7 @@ a.i-link:hover{
     text-align: center;
 }
 .header .num li.m-i span{
-    position: absolute;
+	position: absolute;
     top: 0;
     left: 50%;
     margin-left: -12px;
@@ -352,7 +356,7 @@ a.i-link:hover{
     padding: 1px 3px;
 }
 .header .num li.m-i .v-num span{
-    position: static;
+	position: static;
     display: inline-block;
     vertical-align: top;
     top: auto;
@@ -363,10 +367,10 @@ a.i-link:hover{
 
 }
 .header .num li.m-i.m-i-square{
-    margin: 0 20px;
+	margin: 0 20px;
 }
 .header .num li.m-i.m-i-square a.i-link em{
-    padding-left: 22px;
+	padding-left: 22px;
     padding-right: 0;
     padding-top: 0;
     height: 50px;
@@ -387,7 +391,7 @@ a.i-link:hover{
     font-size: 16px;
 }
 .header .num li.m-i:hover em{
-    color: #00a1d6;
+	color: #00a1d6;
 }
 .header .num .search {
     position: absolute;
@@ -453,18 +457,163 @@ a.i-link:hover{
     background: url('http://static.hdslb.com/images/base/icons.png') -659px -655px no-repeat;
 }
 .header .num .search a.link-ranking:hover {
-    background-color: #fff;
+	background-color: #fff;
 }
-.b-page{
-    zoom: 1;
+.v-head{
     width: 980px;
-    display: block;
+    margin: 0 auto;
+    padding: 5px 0 10px 0;
+    height: 100px;
+}
+.v-title{
+    text-align: center;
+    line-height: 100px;
+}
+.v-title h1{
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
+.v-title .v-upid {
+    float: right;
+}
+.v-title .v-upid, .v-upid div{
+    display: inline-block;
+}
+.v-upid div{
+    padding: 0 10px 0 0;
+    font-size: 20px;
+    float: left;
+}
+.v-body{
+    width: 980px;
     margin: 0 auto;
 }
-.b-page-top{
-    margin-bottom: 20px;
-    height: 240px;
+.v-body video{
+    width: 980px;
 }
-.s-bottom{
+.v-body input{
+    display: inline-block;
+    height: 30px;
+    padding: 0;
+    float: 
+}
+.v-body .dm{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+    height: 32px;
+}
+.v-body div#tm{
     position: absolute;
+    height: 490px;
+    width: 980px;
+}
+.v-body div#tm div{
+    position: absolute;
+    font-size: 20px
+}
+.v-body input.danmu{
+    width: 864px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    position: relative;
+    border: 0;
+}
+.v-body input.senddm{
+    width: 100px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    height: 32px;
+}
+.v-body .myDm{
+    position: relative;
+    font-size: 20px;
+}
+iframe{
+    display: none;
+}
+.all{
+    font-family: Microsoft YaHei,Arial,Helvetica,sans-serif;
+    zoom: 1;
+    background: #fff;
+    width: 980px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 100%;
+}
+.pinglun{
+    float: left;
+    width: 690px;
+}
+.textarea-container{
+    position: relative;
+    margin-left: 85px;
+    margin-right: 80px;
+}
+.textarea-container textarea {
+    font-size: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+    border: 1px solid #e5e9ef;
+    overflow: auto;
+    border-radius: 4px;
+    color: #555;
+    width: 100%!important;
+    height: 65px;
+    transition: 0s;
+    padding: 5px 10px;
+    line-height: normal;
+    outline: none;
+    resize: none;
+}
+.comment-submit {
+    width: 70px;
+    height: 64px;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 60px;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #00a1d6;
+    border: 1px solid #00a1d6;
+    transition: .1s;
+    user-select: none;
+}
+.user-face {
+    float: left;
+    margin: 7px 0 0 5px;
+    position: relative;
+}
+.con {
+    position: relative;
+    margin-left: 85px;
+    padding: 22px 0 14px;
+    border-top: 1px solid #e5e9ef;
+}
+.text {
+    line-height: 20px;
+    padding: 2px 0;
+    font-size: 14px;
+    text-shadow: none;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.btn-hover {
+    padding: 0 5px;
+    border-radius: 4px;
+    margin-right: 15px;
+    cursor: pointer;
+    display: inline-block;
 }

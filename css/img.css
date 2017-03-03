@@ -1,0 +1,63 @@
+html,body{margin:0;}
+ul,li,span,a{margin:0;padding:0;list-style-type: none;}
+.con {
+    height:220px;
+    width:440px;
+    position:relative;
+    overflow:hidden;
+
+}
+.on{
+    background:lightskyblue;
+}
+#img{
+    height:200px;
+    width:3200px;
+    position:absolute;
+
+}
+#img img{
+    height:220px;
+    width:440px;
+    float:left;
+}
+.bottom{   
+    height:20px;
+    width:440px;
+    position:absolute;
+    bottom:0px;
+}
+.button{display:block; 
+    position:absolute;
+    height:20px;
+    width:200px;
+    right:0px;
+}
+.button .on{
+    background:lightskyblue;
+}
+.button li{
+    position:relative;
+    left:65px;
+    background:grey;
+    border-radius:50%;
+    cursor:pointer;
+    float:left;
+    margin:5px;
+    width:15px;
+    height:15px;
+}
+.span_1 {
+    height:20px;
+    width:200px;
+    float:left;
+}
+.span_1 .a_1{
+    color:white;
+    font-size:10px;
+    line-height:20px;
+}
+.div_1{
+    position: relative;
+    left:20px;
+}

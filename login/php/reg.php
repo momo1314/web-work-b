@@ -1,5 +1,7 @@
 <?php
+header("Content-type: text/html; charset=utf-8"); 
 session_start();
+session_unset();
 session_destroy();
 if (!empty($_POST)) {
     if (isset($_POST['username']) && $_POST['username'] != '' &&
@@ -14,7 +16,7 @@ if (!empty($_POST)) {
         $validate = strtolower($validate);
         if($validate!=$_SESSION["authnum_session"]){
                 //判断session值与用户输入的验证码是否一致;
-                    print  ("<script>alert('登录失败,请检查验证码是否正确');location.href='../../html/index.html'</script>");
+                    echo "<script>alert('登录失败,请检查验证码是否正确');location.href='../../html/index.html'</script>";
         }else{
             try 
             {
@@ -29,26 +31,25 @@ if (!empty($_POST)) {
                 }
                 else{
                     $name = $_POST['username'];
-                    $sql = "insert into user(username,password,time) values ('$name','$password',now())";
+                    $sql = "insert into user(username,password,time,img) values ('$name','$password',now(),'http://touxiang.qqzhi.com/uploads/2012-11/1111032829507.jpg')";
                     $exec = $pdo->query($sql);
                     if($exec){
                         $res = $pdo->query($sel);
                         $data = $res->fetch(PDO::FETCH_ASSOC);
-                        $_SESSION['login'] = $data['uid'];
+                        $_SESSION['uid'] = $data['uid'];
                         echo  "<script>alert('成功');location.href='../../html/index.html'</script>";
                     }else{
                         echo  "<script>alert('失败');location.href='../html/reg.html'</script>";
                     }
                 }
-                
             } 
             catch (PDOException $e) 
             {
-                echo "数据库连接失败";
+                echo "<script>alert('数据库连接失败');location.href='../html/reg.html'</script>";
             }
         }
     } 
     else{
-        echo "表单未填完整";
+        echo "<script>alert('表单未填完整');location.href='../html/reg.html'</script>";
     }
 }
